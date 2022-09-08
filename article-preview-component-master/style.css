@@ -1,0 +1,229 @@
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--LightGrayishBlue);
+}
+
+.card {
+    height: auto;
+    width: 900px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px
+}
+
+.card .banner {
+    width: 40%;
+    border-radius: 15px 0 0 15px;
+    background-image: url(/images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card .article {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.article h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.article p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 90%;
+    color: var(--DesaturatedDarkBlue);
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-section .profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-section .profile .profile-pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px
+}
+
+.profile-section .profile .profile-pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-section .profile .profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-section .profile .profile-details h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.profile-section .profile .profile-details .date {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: var(--DesaturatedDarkBlue);
+}
+
+.share {
+    background-color: var(--GrayishBlue);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: none;
+}
+
+.mobile-share {
+    display: none;
+}
+
+@media screen and (max-width:450px) {
+    .card {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .card .banner {
+        width: 100%;
+        height: 250px;
+        border-radius: 15px 15px 0 0;
+        background-image: url(/images/drawers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card .article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .article h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--VeryDarkGrayishBlue);
+    }
+    
+    .article p {
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 1.6;
+        width: 100%;
+        color: var(--DesaturatedDarkBlue);
+    }
+
+    .profile-section .profile {
+        display: none;
+    }
+
+    .social-links {
+        display: block;
+    }
+
+    .profile-section {
+        display: none;
+    }
+
+    .share {
+        display: none;
+    }
+
+    .mobile-share {
+        display: block;
+        background: var(--VeryDarkGrayishBlue);
+        display: flex;
+        padding: 20px 30px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-links h2 {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--DesaturatedDarkBlue);
+    }
+
+    .social-links .icons  {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .social-links .icons li {
+        height: 25px;
+        margin-left: 20px;
+    }
+
+    .social-links .icons li img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #sharing {
+        background-color: var(--GrayishBlue);
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
